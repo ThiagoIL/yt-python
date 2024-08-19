@@ -484,3 +484,9 @@ Verifique o Executável:
 
 Após a execução do PyInstaller, o executável com o nome MeuDownloader.exe será gerado na pasta dist.
 Com essa modificação, o executável gerado terá o nome que você especificou.
+
+
+# CRIAR O EXECUTAVEL INCLUINDO O FFMPEG
+
+pyinstaller --onefile --noconsole --add-binary "ffmpeg.exe;." --name MeuDownloader downloader.py
+
